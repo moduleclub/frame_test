@@ -3,25 +3,25 @@
 #wiki
 # https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
 
-#1->安装git工具 
+#1-> install git tools
 	sudo apt-get install git
-#2->设置开发者的名字
+#2->set developer name
 	git config --global user.name "you name"
-#3->设置开发者的邮箱
+#3->set developer email 
 	git config --global user.email "email@example.com"
-#4->在工程文件下创建版本库
+#4->create git enviroment in project 
 	git init
-#5->把文件加到版本库中临时内存中
+#5->add files to repository stage 
 	git add <file_name>
-#6->提交文件到版本库中
+#6->commit files to current repository branch
 	git commit -m "my commit"
-#7->创建远程仓SSH KEY(以github为例)
+#7->create repository SSH KEY(github)
 	ssh-keygen -t rsa -C "youremail@example.com"
 	//在用户主目录 .ssh 里面有id_rsa 和 id_rsa.pub两个文件
-#8->将id_rsa.pub内容传到github上
+#8->push id_rsa.pub file to github
 
-#9->添加远程仓
+#9->add remote repository 
 	git remote add origin git@github.com:moduleclub/frame_test.git 
-#10->推送master分支到github
+#10->push master repository to github
 	git push origin master
 	
